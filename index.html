@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academia FitLife</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ===== HEADER - Menu de Navegação ===== -->
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="./img/gymlogo2.png" alt="">
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a class="nav-list" href="#home">Início</a></li>
+          <li class="nav-item"><a class="nav-list" href="#planos">Planos</a></li>
+          <li class="nav-item"><a class="nav-list" href="#horarios">Horários</a></li>
+          <li class="nav-item"><a class="nav-list" href="#aulas">Aulas</a></li>
+          <li class="nav-item"><a class="nav-list" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="login-btn btn-tras">
+        <button><a href="#">Entrar</a></button>
+      </div>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="./assets/menu_white_36dp.svg" alt=""></button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a class="nav-list" href="#home">Início</a></li>
+        <li class="nav-item"><a class="nav-list" href="#planos">Planos</a></li>
+        <li class="nav-item"><a class="nav-list" href="#horarios">Horários</a></li>
+        <li class="nav-item"><a class="nav-list" href="#aulas">Aulas</a></li>
+        <li class="nav-item"><a class="nav-list" href="#contato">Contato</a></li>
+      </ul>
+      <div class="login-btn btn-tras">
+        <button><a href="#">Entrar</a></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== INTRODUÇÃO - Banner Principal ===== -->
+  <section id="home" class="intro">
+    <div class="intro-text">
+      <h1>Transforme seu corpo com a FitLife</h1>
+      <p>Treinos personalizados, estrutura moderna e os melhores profissionais.</p>
+      <button class="btn-cta btn-tras">Agende uma Aula Experimental</button>
+    </div>
+    <div class="intro-img">
+      <img src="./img/GYMLOGO.png" alt="Imagem academia" />
+    </div>
+  </section>
+
+  <!-- ===== PLANOS ===== -->
+  <section id="planos" class="planos">
+    <h2>Nossos Planos</h2>
+    <div class="plano-cards">
+      <div class="card">
+        <h3>Básico</h3>
+        <p>R$ 99/mês</p>
+        <ul>
+          <li>Acesso à musculação</li>
+          <li>Aulas coletivas</li>
+        </ul>
+        <button class="btn-tras">Escolher</button>
+      </div>
+      <div class="card destaque">
+        <h3>Intermediário</h3>
+        <p>R$ 149/mês</p>
+        <ul>
+          <li>Todos os benefícios do Básico</li>
+          <li>Consultoria com personal</li>
+        </ul>
+        <button class="btn-tras">Escolher</button>
+      </div>
+      <div class="card">
+        <h3>Premium</h3>
+        <p>R$ 199/mês</p>
+        <ul>
+          <li>Todos os benefícios anteriores</li>
+          <li>Nutricionista e plano alimentar</li>
+        </ul>
+        <button class="btn-tras">Escolher</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HORÁRIOS ===== -->
+  <section id="horarios" class="horarios">
+    <h2>Horários de Aulas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Dia</th>
+          <th>Manhã</th>
+          <th>Tarde</th>
+          <th>Noite</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Seg - Sex</td>
+          <td>06:00 - 10:00</td>
+          <td>14:00 - 17:00</td>
+          <td>18:00 - 22:00</td>
+        </tr>
+        <tr>
+          <td>Sábado</td>
+          <td>08:00 - 12:00</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== AULAS ===== -->
+  <section id="aulas" class="aulas">
+    <div class="caixa-video">
+      <video src="./videos/5319760-uhd_3840_2160_25fps.mp4" loop muted autoplay></video>
+      <div class="mascara"></div>
+    </div>
+    <h2>Tipos de Aulas</h2>
+    <div class="aula-lista">
+      <div class="aula-item">Spinning</div>
+      <div class="aula-item">Musculação</div>
+      <div class="aula-item">Crossfit</div>
+      <div class="aula-item">Pilates</div>
+      <div class="aula-item">Funcional</div>
+    </div>
+  </section>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="depoimentos">
+    <div>
+      <h2>O que dizem nossos alunos</h2>
+      <blockquote>“A melhor academia que já frequentei, estrutura top e ótimos profissionais!” - João M.</blockquote>
+      <blockquote>“Consegui emagrecer 10kg com os treinos e acompanhamento!” - Ana C.</blockquote>
+    </div>
+
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section id="contato" class="contato">
+    <h2>Fale Conosco</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit" class="btn-tras">Enviar</button>
+    </form>
+  </section>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer>
+    <p>&copy; 2025 FitLife Academia</p>
+    <p>Rua Exemplo, 123 - São Paulo - SP</p>
+    <p>contato@fitlife.com.br | (11) 99999-9999</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
