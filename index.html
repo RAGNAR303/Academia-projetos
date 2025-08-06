@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Academia FitLife</title>
   <link rel="stylesheet" href="style.css" />
-</head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <body>
   <!-- ===== HEADER - Menu de Navegação ===== -->
@@ -46,7 +47,7 @@
   </header>
 
   <!-- ===== INTRODUÇÃO - Banner Principal ===== -->
-  <section id="home" class="intro">
+  <section id="home" class="intro sectionbgefection1">
     <div class="intro-text">
       <h1>Transforme seu corpo com a FitLife</h1>
       <p>Treinos personalizados, estrutura moderna e os melhores profissionais.</p>
@@ -58,41 +59,41 @@
   </section>
 
   <!-- ===== PLANOS ===== -->
-  <section id="planos" class="planos">
+  <section id="planos" class="planos" data-aos="fade-up">
     <h2>Nossos Planos</h2>
     <div class="plano-cards">
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <h3>Básico</h3>
         <p>R$ 99/mês</p>
         <ul>
           <li>Acesso à musculação</li>
           <li>Aulas coletivas</li>
         </ul>
-        <button class="btn-tras">Escolher</button>
+        <button class="btn-cta btn-tras">Escolher</button>
       </div>
-      <div class="card destaque">
+      <div class="card destaque" data-aos="zoom-in">
         <h3>Intermediário</h3>
         <p>R$ 149/mês</p>
         <ul>
           <li>Todos os benefícios do Básico</li>
           <li>Consultoria com personal</li>
         </ul>
-        <button class="btn-tras">Escolher</button>
+        <button class="btn-cta btn-tras">Escolher</button>
       </div>
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <h3>Premium</h3>
         <p>R$ 199/mês</p>
         <ul>
           <li>Todos os benefícios anteriores</li>
           <li>Nutricionista e plano alimentar</li>
         </ul>
-        <button class="btn-tras">Escolher</button>
+        <button class="btn-cta btn-tras">Escolher</button>
       </div>
     </div>
   </section>
 
   <!-- ===== HORÁRIOS ===== -->
-  <section id="horarios" class="horarios">
+  <section id="horarios" class="horarios sectionbgefection2">
     <h2>Horários de Aulas</h2>
     <table>
       <thead>
@@ -127,11 +128,11 @@
   </section>
 
   <!-- ===== AULAS ===== -->
-  <section id="aulas" class="aulas">
-    <div class="caixa-video">
+  <section id="aulas" class="aulas" data-aos="fade-up">
+    <!-- <div class="caixa-video">
       <video src="./videos/5319760-uhd_3840_2160_25fps.mp4" loop muted autoplay></video>
       <div class="mascara"></div>
-    </div>
+    </div> -->
     <h2>Tipos de Aulas</h2>
     <div class="aula-lista">
       <div class="aula-item">Spinning</div>
@@ -143,7 +144,7 @@
   </section>
 
   <!-- ===== DEPOIMENTOS ===== -->
-  <section class="depoimentos">
+  <section class="depoimentos sectionbgefection3">
     <div>
       <h2>O que dizem nossos alunos</h2>
       <blockquote>“A melhor academia que já frequentei, estrutura top e ótimos profissionais!” - João M.</blockquote>
@@ -153,7 +154,7 @@
   </section>
 
   <!-- ===== CONTATO ===== -->
-  <section id="contato" class="contato">
+  <section id="contato" class="contato" data-aos="fade-up">
     <h2>Fale Conosco</h2>
     <form>
       <input type="text" placeholder="Seu nome" required />
@@ -162,14 +163,32 @@
       <button type="submit" class="btn-tras">Enviar</button>
     </form>
   </section>
-
+  <img class="whastapp" src="./img/whastapp.png"></img>
   <!-- ===== RODAPÉ ===== -->
-  <footer>
-    <p>&copy; 2025 FitLife Academia</p>
-    <p>Rua Exemplo, 123 - São Paulo - SP</p>
-    <p>contato@fitlife.com.br | (11) 99999-9999</p>
+  <footer data-aos="fade-up">
+    <div>
+      <h4>Contatos:</h4>
+      <p>&copy; 2025 FitLife Academia</p>
+      <p>Rua Exemplo, 123 - São Paulo - SP</p>
+      <p><a href="#">contato@fitlife.com.br </a>|<a href="#"> (11) 99999-9999</a> </p>
+    </div>
+
+    <div>
+      <h4>Redes:</h4>
+      <div>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+
+    </div>
+
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="script.js"></script>
 </body>
 

@@ -8,10 +8,17 @@ function menuShow() {
     if(menuMobile.classList.contains('open')){
         menuMobile.classList.remove('open')
         document.querySelector('.icon').src = "./assets/menu_white_36dp.svg"
+        menuMobile.style.opacity = 0
+        
+        menuMobile.style.transition = "0.5s"
+       
     }else{
         menuMobile.classList.add('open')
         document.querySelector('.icon').src = "./assets/close_white_36dp.svg"
-        
+        setTimeout(()=> {
+          menuMobile.style.opacity = 1
+          menuMobile.style.top = (menuMobile.offsetWidth * -1) + "px"
+        } , 100)
     }
 }
 
